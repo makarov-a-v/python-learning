@@ -1,0 +1,34 @@
+
+
+'''user = ["Artsem", 32]
+
+author = {
+    "name": "Artsem",
+    "surname": "Makarov",   #prioritet
+    "age": 32,
+    "is_student": True,
+}
+
+print(author["name"])
+print((author.get("surname", "Makarov"))) #po defoltu '''
+
+
+author = {
+    "name": "Artsem",
+    "age": 32,
+
+}
+
+print(author["name"])
+print((author.get("surname", "Makarov"))) #po defoltu
+
+author["age"] = 32
+author["is_student"] = True
+deleted_name = author.pop("name")    #author.pop("name")
+
+print(author, deleted_name)
+
+#user.get("email") — безопасно получить необязательное поле.
+#user["email"] — получить поле, которое ожидается в словаре;
+# если его нет, Python сообщит об ошибке.
+#подходят, когда отсутствие ключа должно считаться ошибкой.
