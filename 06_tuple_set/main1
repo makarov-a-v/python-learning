@@ -1,0 +1,7 @@
+#кортежи и множества
+my_list = ["Junior", "Middle", "Senior"] #кортежи
+
+my_tupple = ("Junior", "Middle", "Senior")
+
+my_list[0] = "Junior123" #кортежи
+print(my_list)
